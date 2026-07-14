@@ -1,8 +1,9 @@
 name: WDIO tests
 
+# Triggered every 10 minutes by cron-job.org via the workflow_dispatch API.
+# GitHub's own schedule trigger was removed: it is best-effort (delays/skips)
+# and would double the Actions-minutes usage on top of the external cron.
 on:
-  schedule:
-    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 jobs:
