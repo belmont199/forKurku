@@ -9,8 +9,11 @@ const TARGET_PRODUCT_ID = '32663';
 const TARGET_POSITION = 3;
 
 // Premium banners rotate on every page load, so landing a specific one
-// on a specific position can take many refreshes.
-const MAX_REFRESHES = 100;
+// on a specific position can take many refreshes. 100 was too tight and
+// caused occasional false-fail runs on the 10-minute cron; 300 pushes the
+// miss probability low enough to be negligible while staying inside the
+// timeouts below.
+const MAX_REFRESHES = 300;
 
 async function getProductIdAtPosition(position) {
     await browser.$('.products-list-container img[data-product-card-id]').waitForExist();
