@@ -1,12 +1,12 @@
 const CATEGORY_URL =
-    'https://servisebi.ge/ka/product/182/%E1%83%99%E1%83%9D%E1%83%9C%E1%83%93%E1%83%98%E1%83%AA%E1%83%98%E1%83%9D%E1%83%9C%E1%83%94%E1%83%A0%E1%83%98%E1%83%A1-%E1%83%AE%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1%E1%83%90%E1%83%9C%E1%83%98';
+    'https://servisebi.ge/ka/product/28/%E1%83%92%E1%83%90%E1%83%97%E1%83%91%E1%83%9D%E1%83%91%E1%83%98%E1%83%A1-%E1%83%AE%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1%E1%83%90%E1%83%9C%E1%83%98';
 
-// The banner we are waiting for: "კონდენციონერის ხელოსანი" card
-// (client name "კონდიციონერის ხელოსანი", phone 511-13-**-**)
-const TARGET_PRODUCT_ID = '32663';
+// The banner we are waiting for: "გათბობის ქვაბის შეკეთება გარანტიით" card
+// (client name "გიორგი", phone 511-13-**-**)
+const TARGET_PRODUCT_ID = '28734';
 
 // 1-based position in the list the banner must reach.
-const TARGET_POSITION = 3;
+const TARGET_POSITION = 2;
 
 // Premium banners rotate on every page load, so landing a specific one
 // on a specific position can take many refreshes. 100 was too tight and
